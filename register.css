@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(90deg,rgb(56, 148, 148),black,black,rgb(56, 148, 148));
+}
+header p{
+    padding: 0.5em;
+    background-color: rgb(15, 113, 143);
+    color: white;
+    width: fit-content;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: larger;
+}
+header{
+    display:flex;
+    justify-content: center;
+    padding: 0.2em;
+    background-image: linear-gradient(45deg,black,rgb(56, 148, 148),black);
+}
+h2{
+    color: rgb(39, 168, 207);
+}
+
+#eruname,#erpassword,#nomatch{
+    color: red;
+    visibility: hidden;
+}
+input,label{
+    margin: 1em;
+}
+.gender, label{
+    padding: 0.4em;
+    background-color: rgb(56, 148, 148);
+    border-radius: 7px;
+    color: white;
+}
+#male,#female{
+    background-color: white;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    color: black;
+}
+input{
+    border-radius: 10px;
+    border-width: 0px;
+    background-color:rgb(202, 218, 143);
+    padding: 0.6em 10em 0.6em 0.6em;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+.second{
+    position: relative;
+    left: 10%;
+}
+.first, .third{
+    width: 50px;
+    height: 630px;
+    background-color: rgb(122, 236, 137);
+}
+.first{
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.third{
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+form span{
+    margin-right: 2em;
+    margin-left: 1em;
+}
+.submit{
+    cursor: pointer;
+    background-color:  rgb(56, 148, 148);
+    padding: 0.7em 1.8em 0.7em 1.8em;
+    border-radius: 10px;
+    border-width: 0em;
+    margin-top: 1.2em;
+    margin-left: 6em;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+}
+.submit:hover{
+    background-color: rgb(37, 197, 136);
+    color: black;
+}

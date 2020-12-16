@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+<body>
+    <header>
+        <p>STC-VIT</p>
+    </header>
+    <section>
+        <div class="first"></div>
+        <div class="second">
+            <h2>Register to Know more!</h2><br>
+            <form onsubmit="return validate();"
+             action="course.html" class="register">
+                <label for="uname">User name:</label><br>
+                <input type="text" id="uname" name="uname" placeholder="User name">
+                <span id="eruname">Username should be of length >= 8</span><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Password"><br><br>
+                <label for="cpassword">Confirm password:</label><br>
+                <input type="password" id="cpassword" name="cpassword" placeholder="Password">
+                <span id="nomatch">The passwords do not match</span><br><br>
+                <label for="email">Email id:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Email id"><br>
+                <span class="gender">Gender:</span>
+                <input type="radio" name="gender" id="male">
+                <label for="male" id="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female" id="female">Female</label><br>
+                <button type="submit" value="Submit" class="submit">Submit</button><br><br>
+                <div>
+                    <span id="erpassword">Password should be of min length 8,with one small,capital letter,one numerical </span><br>
+                </div>
+            </form>                
+        </div>
+        <div class="third"></div>
+    </section>
+</body>
+</html>
