@@ -1,7 +1,8 @@
 body{
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(29, 28, 28);
+    /* background-color: rgb(29, 28, 28); */
+    background-image:url(https://cdn.slashgear.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg)
 }
 header p{
     padding: 0.5em;
