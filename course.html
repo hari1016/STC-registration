@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap" rel="stylesheet">
     <title>Course registration</title>
     <link rel="stylesheet" href="course.css">
+    <script src="course.js"></script>
 </head>
 <body>
     <header>
@@ -16,33 +17,37 @@
         <div>
             <p>University core:</p> 
             <input type="checkbox" name="DM" id="DM">
-            <label for="DM">Discrete mathematics</label><br><br>
-            <input type="checkbox" name="Ep" id="EP">
-            <label for="EP">Engineering Physics</label>
+            <label for="DM">Discrete mathematics (4 Credits)</label><br><br>
+            <input type="checkbox" name="EP" id="EP">
+            <label for="EP">Engineering Physics (3 Credits)</label>
 
         </div>
         <div>
             <p>Program core:</p>
             <input type="checkbox" name="DSA" id="DSA">
-            <label for="DSA">Data structures and algorithm</label><br><br>
+            <label for="DSA">Data structures and algorithm (4 Credits)</label><br><br>
             <input type="checkbox" name="OS" id="OS">
-            <label for="OS">Operating system</label>
+            <label for="OS">Operating system (4 Credits)</label>
         </div>
         <div>
             <p>University elective:</p>
             <input type="checkbox" name="FD" id="FD">
-            <label for="FD">Fluid Dynamics</label><br><br>
+            <label for="FD">Fluid Dynamics (3 Credits)</label><br><br>
             <input type="checkbox" name="EC" id="EC">
-            <label for="EC">Engineering Chemistry</label>
+            <label for="EC">Engineering Chemistry (3 Credits)</label>
         </div>
         <div>
             <p>Program elective:</p>
             <input type="checkbox" name="AI" id="AI">
-            <label for="AI">Artificial Inteligence</label><br><br>
+            <label for="AI">Artificial Inteligence (4 Credits)</label><br><br>
             <input type="checkbox" name="CC" id="CC">
-            <label for="CC">Cloud computing</label>
+            <label for="CC">Cloud computing (4 Credits)</label>
         </div>
     </section>
-    <p class=total>total credits:</p>
+    <button type="submit" onclick="calculate()">Submit</button>
+    <div class=total>
+        <p>Total credits :</p>
+        <span id="total"> 0</span>
+    </div>
 </body>
 </html>

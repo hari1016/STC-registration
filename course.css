@@ -23,20 +23,59 @@ section{
     justify-content: space-evenly;
     align-items: center;
 }
-div{
+section div{
     position: relative;
     top: 80px;
     width: 250px;
     height: 300px;
-    background-color:  rgb(56, 148, 148);
+    background-color:  rgb(99, 233, 81);
     padding: 0em 0.7em;
-    border-radius: 20px;
+    border-radius: 15%;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 0em ;
+    border-color: rgb(36, 165, 204);
+    border-left-width: 2em;
+}
+section div:hover{
+    background-color: rgb(109, 236, 236);
+    border-radius: 15%;
+    border-bottom-right-radius: 0em;
+    border-top-left-radius: 0em ;
+
 }
 div p{
-    background-color: rgb(59, 255, 92);
+    background-color: rgb(0, 0, 0);
     padding: 0.4em 0.8em;
     border-radius: 10px;
+    color: rgb(99, 233, 81);
+}
+.total p{
+    margin: 0em;
+    background-color: rgb(36, 165, 204);
+    width:fit-content;
+    color: black;
 }
 .total{
-    background-color: rgb(59, 255, 92);
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: large;
 }
+.total span{
+    margin-left: 0.5em;
+    margin-top: 0.4em;
+    color: rgb(99, 233, 81);
+}
+button{
+    border-width: 0em;
+    background-color: rgb(247, 75, 33);
+    padding: 0.4em 0.8em; 
+    font-size: large;
+    margin-left: 40em;
+    margin-top: 8.5em;
+    border-radius: 10px;
+    font-weight: 550;
+}
+button:hover{
+    background-color:  rgb(99, 233, 81);
